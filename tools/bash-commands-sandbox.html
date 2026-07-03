@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -255,16 +255,16 @@
                     children: {
                       "welcome.txt": {
                         type: "file",
-                        content: "Welcome to the Bash Sandbox!\n\nType 'help' to see a list of available commands.\n",
-                      },
-                    },
-                  },
-                },
+                        content: "Welcome to the Bash Sandbox!\n\nType 'help' to see a list of available commands.\n"
+                      }
+                    }
+                  }
+                }
               },
               etc: { type: "directory", children: {} },
-              var: { type: "directory", children: {} },
-            },
-          },
+              var: { type: "directory", children: {} }
+            }
+          }
         };
 
         const getPathNode = (path) => {
@@ -301,7 +301,7 @@
               { cmd: "echo text >> &lt;file&gt;", desc: "Append text to a file." },
               { cmd: "rm -rf &lt;file/directory&gt;", desc: "Remove/Delete a file or directory." },
               { cmd: "clear", desc: "Clear the terminal screen." },
-              { cmd: "help", desc: "Display list of available commands." },
+              { cmd: "help", desc: "Display list of available commands." }
             ];
             let tableHtml = '<table class="help-table">';
             helpData.forEach((item) => {
@@ -469,7 +469,7 @@
             terminal.innerHTML = "";
             // The new prompt is added by the calling function, so we just need to clear the interactive area.
             return "";
-          },
+          }
         };
 
         // --- Terminal UI & Input Handling ---
@@ -480,10 +480,7 @@
 
           const prompt = document.createElement("span");
           prompt.className = "prompt";
-          prompt.innerHTML = `<span class="user">user@one-file-tools</span>:<span class="path">${currentPath.replace(
-            fs["/"].children.home.children.user,
-            "~"
-          )}</span>$`;
+          prompt.innerHTML = `<span class="user">user@one-file-tools</span>:<span class="path">${currentPath.replace(fs["/"].children.home.children.user, "~")}</span>$`;
 
           const inputContainer = document.createElement("div");
           inputContainer.className = "input-container";
@@ -573,31 +570,31 @@
         };
 
         const handleTabCompletion = (input) => {
-            const value = input.value;
-            const parts = value.split(" ");
-            const partialPath = parts.pop();
-            if (!partialPath) return;
+          const value = input.value;
+          const parts = value.split(" ");
+          const partialPath = parts.pop();
+          if (!partialPath) return;
 
-            const parentPath = partialPath.includes('/') ? resolvePath(partialPath.substring(0, partialPath.lastIndexOf('/') + 1)) : currentPath;
-            const partialName = partialPath.substring(partialPath.lastIndexOf('/') + 1);
+          const parentPath = partialPath.includes("/") ? resolvePath(partialPath.substring(0, partialPath.lastIndexOf("/") + 1)) : currentPath;
+          const partialName = partialPath.substring(partialPath.lastIndexOf("/") + 1);
 
-            const parentNode = getPathNode(parentPath);
-            if (!parentNode || parentNode.type !== 'directory') return;
+          const parentNode = getPathNode(parentPath);
+          if (!parentNode || parentNode.type !== "directory") return;
 
-            const matches = Object.keys(parentNode.children).filter(name => name.startsWith(partialName));
+          const matches = Object.keys(parentNode.children).filter((name) => name.startsWith(partialName));
 
-            if (matches.length === 1) {
-                const completion = matches[0];
-                const newPath = partialPath.substring(0, partialPath.lastIndexOf('/') + 1) + completion;
-                input.value = parts.join(" ") + (parts.length > 0 ? " " : "") + newPath;
-                if (parentNode.children[completion].type === 'directory') {
-                    input.value += '/';
-                }
-            } else if (matches.length > 1) {
-                writeOutput(`<span class="prompt">${input.previousElementSibling.innerHTML}</span> ${value}`);
-                writeOutput(matches.join('\n'));
-                createPromptAndScroll(value);
+          if (matches.length === 1) {
+            const completion = matches[0];
+            const newPath = partialPath.substring(0, partialPath.lastIndexOf("/") + 1) + completion;
+            input.value = parts.join(" ") + (parts.length > 0 ? " " : "") + newPath;
+            if (parentNode.children[completion].type === "directory") {
+              input.value += "/";
             }
+          } else if (matches.length > 1) {
+            writeOutput(`<span class="prompt">${input.previousElementSibling.innerHTML}</span> ${value}`);
+            writeOutput(matches.join("\n"));
+            createPromptAndScroll(value);
+          }
         };
 
         const createPromptAndScroll = (currentValue = "") => {
