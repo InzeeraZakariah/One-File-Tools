@@ -297,14 +297,14 @@
       "category": "utilities",
       "tags": [
         "binary",
+        "converter",
         "decimal",
         "hex",
-        "converter",
         "numbers"
       ],
       "techStack": [
-        "HTML5",
         "CSS3",
+        "HTML5",
         "Vanilla JS"
       ],
       "difficulty": "Easy",
@@ -370,27 +370,6 @@
         "formatting",
         "string-manipulation",
         "text"
-      ],
-      "techStack": [
-        "CSS3",
-        "HTML5",
-        "Vanilla JS"
-      ],
-      "difficulty": "Easy",
-      "status": "live"
-    },
-    {
-      "id": "json-csv-converter",
-      "name": "JSON CSV Converter",
-      "shortDescription": "Convert between JSON and CSV formats with bidirectional conversion and custom delimiters.",
-      "longDescription": "## JSON CSV Converter\n\nA bidirectional converter between JSON arrays and CSV text, with support for custom delimiters.\n\n### Features\n\n- Two-way conversion: JSON to CSV and CSV to JSON\n- Custom delimiter support (comma, tab, semicolon, pipe)\n- Proper CSV quoting for values containing delimiters or quotes\n- Sample data buttons for quick testing\n- Live row/item count stats\n- Success feedback on conversion\n- Dark mode support via prefers-color-scheme\n- Works completely offline",
-      "category": "json-api",
-      "tags": [
-        "converter",
-        "csv",
-        "data",
-        "json",
-        "utility"
       ],
       "techStack": [
         "CSS3",
@@ -478,13 +457,13 @@
       "category": "color",
       "tags": [
         "color",
+        "harmony",
         "mixer",
-        "palette",
-        "harmony"
+        "palette"
       ],
       "techStack": [
-        "HTML5",
         "CSS3",
+        "HTML5",
         "Vanilla JS"
       ],
       "difficulty": "Easy",
@@ -1170,6 +1149,27 @@
       "status": "live"
     },
     {
+      "id": "json-csv-converter",
+      "name": "JSON CSV Converter",
+      "shortDescription": "Convert between JSON and CSV formats with bidirectional conversion and custom delimiters.",
+      "longDescription": "## JSON CSV Converter\n\nA bidirectional converter between JSON arrays and CSV text, with support for custom delimiters.\n\n### Features\n\n- Two-way conversion: JSON to CSV and CSV to JSON\n- Custom delimiter support (comma, tab, semicolon, pipe)\n- Proper CSV quoting for values containing delimiters or quotes\n- Sample data buttons for quick testing\n- Live row/item count stats\n- Success feedback on conversion\n- Dark mode support via prefers-color-scheme\n- Works completely offline",
+      "category": "json-api",
+      "tags": [
+        "converter",
+        "csv",
+        "data",
+        "json",
+        "utility"
+      ],
+      "techStack": [
+        "CSS3",
+        "HTML5",
+        "Vanilla JS"
+      ],
+      "difficulty": "Easy",
+      "status": "live"
+    },
+    {
       "id": "json-diff-viewer",
       "name": "JSON Diff Viewer",
       "shortDescription": "Compare two JSON objects semantically with added, removed, and modified value highlighting.",
@@ -1222,14 +1222,14 @@
       "longDescription": "## JSON Schema Validator\n\nValidate JSON data against a JSON Schema.\n\n### Features\n\n- Single HTML file\n- Works offline\n- Dark mode support\n- Responsive design",
       "category": "json-api",
       "tags": [
+        "api",
         "json",
         "schema",
-        "validation",
-        "api"
+        "validation"
       ],
       "techStack": [
-        "HTML5",
         "CSS3",
+        "HTML5",
         "Vanilla JS"
       ],
       "difficulty": "Medium",
@@ -1332,14 +1332,14 @@
       "longDescription": "## Markdown Table Generator\n\nGenerate Markdown tables easily with this visual tool.\n\n### Features\n\n- Single HTML file\n- Works offline\n- Dark mode support\n- Responsive design",
       "category": "text",
       "tags": [
-        "markdown",
-        "table",
+        "formatting",
         "generator",
-        "formatting"
+        "markdown",
+        "table"
       ],
       "techStack": [
-        "HTML5",
         "CSS3",
+        "HTML5",
         "Vanilla JS"
       ],
       "difficulty": "Easy",
@@ -1677,14 +1677,14 @@
       "longDescription": "## Screen Resolution Tester\n\nTest your website at different screen resolutions.\n\n### Features\n\n- Single HTML file\n- Works offline\n- Dark mode support\n- Responsive design",
       "category": "browser-network",
       "tags": [
+        "breakpoints",
         "responsive",
         "testing",
-        "viewport",
-        "breakpoints"
+        "viewport"
       ],
       "techStack": [
-        "HTML5",
         "CSS3",
+        "HTML5",
         "Vanilla JS"
       ],
       "difficulty": "Easy",

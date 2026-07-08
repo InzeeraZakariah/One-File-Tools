@@ -21,6 +21,54 @@
   ],
   "quests": [
     {
+      "id": "closure-chronicles",
+      "name": "Closure Chronicles",
+      "shortDescription": "Master JavaScript closures by solving interactive puzzles across 10 levels covering scope, lexical bindings, private variables, and the module pattern.",
+      "longDescription": "## Closure Chronicles\n\nA hands-on JavaScript quest that teaches closures, lexical scoping, and variable lifetimes through 10 interactive code puzzles.\n\n### Features\n- 10 progressively harder levels covering global, function, block, and lexical scope\n- Interactive click-to-select answers with instant feedback\n- Syntax-highlighted code blocks with a dark terminal aesthetic\n- Detailed explanations after each level\n- Hint system (costs one star)\n- Mistake counter and 3-star rating per level\n- Progress saved to localStorage\n- Achievement badges for milestones (Flawless Run, Pure Knowledge, Closure Master)\n- Final scorecard showing accuracy, mistakes, and completion time\n- Confetti celebration on completion",
+      "category": "js-fundamentals",
+      "tags": [
+        "closures",
+        "interactive",
+        "javascript",
+        "lexical-scope",
+        "puzzle",
+        "quest",
+        "scope"
+      ],
+      "techStack": [
+        "CSS3",
+        "HTML5",
+        "LocalStorage API",
+        "Vanilla JS"
+      ],
+      "difficulty": "Medium",
+      "status": "live"
+    },
+    {
+      "id": "closure-chronicles-2",
+      "name": "Closure Chronicles (v2)",
+      "shortDescription": "Master JavaScript closures through 10 interactive puzzles covering scope, lexical bindings, private variables, and the module pattern — with hints, badges, and a timer.",
+      "longDescription": "## Closure Chronicles (v2)\n\nAn enhanced version of Closure Chronicles with a polished dark terminal UI, hint system, achievement badges, and timed gameplay.\n\n### Features\n\n- 10 progressively harder levels covering global, function, block, and lexical scope\n- Syntax-highlighted code blocks\n- Hint system (costs one star)\n- Achievement badges: Flawless Run, Pure Knowledge, Closure Master\n- Timer tracking completion speed\n- 3-star rating based on accuracy\n- Confetti celebration on completion\n- Progress saved via localStorage",
+      "category": "js-fundamentals",
+      "tags": [
+        "closures",
+        "interactive",
+        "javascript",
+        "lexical-scope",
+        "puzzle",
+        "quest",
+        "scope"
+      ],
+      "techStack": [
+        "CSS3",
+        "HTML5",
+        "LocalStorage API",
+        "Vanilla JS"
+      ],
+      "difficulty": "Medium",
+      "status": "live"
+    },
+    {
       "id": "css-grid-quest",
       "name": "CSS Grid Quest",
       "shortDescription": "Learn CSS Grid through 6 interactive challenges.",
@@ -33,12 +81,36 @@
         "learning"
       ],
       "techStack": [
-        "HTML5",
         "CSS3",
-        "Vanilla JS",
-        "LocalStorage"
+        "HTML5",
+        "LocalStorage",
+        "Vanilla JS"
       ],
       "difficulty": "Easy",
+      "status": "live"
+    },
+    {
+      "id": "event-loop-quest",
+      "name": "Event Loop Arena",
+      "shortDescription": "Master JavaScript's async execution order through 10 levels covering sync, setTimeout, Promises, async/await, and microtask priority.",
+      "longDescription": "## Event Loop Arena\n\nPredict the console output order of increasingly tricky JavaScript async code.\n\n### Levels\n\n1. Sync Basics\n2. Variables First\n3. setTimeout Intro\n4. Timeout Delay\n5. Promise Intro\n6. Promise vs Timeout\n7. Promise Chain\n8. Nested Promises\n9. async/await\n10. Final Challenge\n\n### Features\n\n- Multiple choice prediction challenges\n- Concept explanations after each level\n- Score and star rating system\n- Progress saved via localStorage\n- Dark mode support",
+      "category": "js-fundamentals",
+      "tags": [
+        "async-await",
+        "event-loop",
+        "interactive",
+        "javascript",
+        "microtasks",
+        "promises",
+        "quest"
+      ],
+      "techStack": [
+        "CSS3",
+        "HTML5",
+        "LocalStorage API",
+        "Vanilla JS"
+      ],
+      "difficulty": "Medium",
       "status": "live"
     },
     {
@@ -60,30 +132,6 @@
         "HTML5",
         "LocalStorage API",
         "SVG",
-        "Vanilla JS"
-      ],
-      "difficulty": "Medium",
-      "status": "live"
-    },
-    {
-      "id": "closure-chronicles",
-      "name": "Closure Chronicles",
-      "shortDescription": "Master JavaScript closures by solving interactive puzzles across 10 levels covering scope, lexical bindings, private variables, and the module pattern.",
-      "longDescription": "## Closure Chronicles\n\nA hands-on JavaScript quest that teaches closures, lexical scoping, and variable lifetimes through 10 interactive code puzzles.\n\n### Features\n- 10 progressively harder levels covering global, function, block, and lexical scope\n- Interactive click-to-select answers with instant feedback\n- Syntax-highlighted code blocks with a dark terminal aesthetic\n- Detailed explanations after each level\n- Hint system (costs one star)\n- Mistake counter and 3-star rating per level\n- Progress saved to localStorage\n- Achievement badges for milestones (Flawless Run, Pure Knowledge, Closure Master)\n- Final scorecard showing accuracy, mistakes, and completion time\n- Confetti celebration on completion",
-      "category": "js-fundamentals",
-      "tags": [
-        "closures",
-        "interactive",
-        "javascript",
-        "lexical-scope",
-        "puzzle",
-        "quest",
-        "scope"
-      ],
-      "techStack": [
-        "CSS3",
-        "HTML5",
-        "LocalStorage API",
         "Vanilla JS"
       ],
       "difficulty": "Medium",
@@ -155,54 +203,6 @@
         "Vanilla JS"
       ],
       "difficulty": "Easy",
-      "status": "live"
-    },
-    {
-      "id": "closure-chronicles-2",
-      "name": "Closure Chronicles (v2)",
-      "shortDescription": "Master JavaScript closures through 10 interactive puzzles covering scope, lexical bindings, private variables, and the module pattern — with hints, badges, and a timer.",
-      "longDescription": "## Closure Chronicles (v2)\n\nAn enhanced version of Closure Chronicles with a polished dark terminal UI, hint system, achievement badges, and timed gameplay.\n\n### Features\n\n- 10 progressively harder levels covering global, function, block, and lexical scope\n- Syntax-highlighted code blocks\n- Hint system (costs one star)\n- Achievement badges: Flawless Run, Pure Knowledge, Closure Master\n- Timer tracking completion speed\n- 3-star rating based on accuracy\n- Confetti celebration on completion\n- Progress saved via localStorage",
-      "category": "js-fundamentals",
-      "tags": [
-        "closures",
-        "interactive",
-        "javascript",
-        "lexical-scope",
-        "puzzle",
-        "quest",
-        "scope"
-      ],
-      "techStack": [
-        "CSS3",
-        "HTML5",
-        "LocalStorage API",
-        "Vanilla JS"
-      ],
-      "difficulty": "Medium",
-      "status": "live"
-    },
-    {
-      "id": "event-loop-quest",
-      "name": "Event Loop Arena",
-      "shortDescription": "Master JavaScript's async execution order through 10 levels covering sync, setTimeout, Promises, async/await, and microtask priority.",
-      "longDescription": "## Event Loop Arena\n\nPredict the console output order of increasingly tricky JavaScript async code.\n\n### Levels\n\n1. Sync Basics\n2. Variables First\n3. setTimeout Intro\n4. Timeout Delay\n5. Promise Intro\n6. Promise vs Timeout\n7. Promise Chain\n8. Nested Promises\n9. async/await\n10. Final Challenge\n\n### Features\n\n- Multiple choice prediction challenges\n- Concept explanations after each level\n- Score and star rating system\n- Progress saved via localStorage\n- Dark mode support",
-      "category": "js-fundamentals",
-      "tags": [
-        "async-await",
-        "event-loop",
-        "interactive",
-        "javascript",
-        "microtasks",
-        "promises",
-        "quest"
-      ],
-      "techStack": [
-        "CSS3",
-        "HTML5",
-        "LocalStorage API",
-        "Vanilla JS"
-      ],
-      "difficulty": "Medium",
       "status": "live"
     }
   ]
