@@ -1517,10 +1517,13 @@
         "csv",
         "json"
       ],
-      "contributor": {
-        "name": "vishwa-mistry",
-        "github": "vishwa-mistry"
-      }
+      "techStack": [
+        "CSS3",
+        "HTML5",
+        "Vanilla JS"
+      ],
+      "difficulty": "Easy",
+      "status": "live"
     },
     {
       "id": "jsonld-schema-generator",
